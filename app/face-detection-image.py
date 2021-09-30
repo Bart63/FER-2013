@@ -5,8 +5,8 @@ import sys
 imagePath = sys.argv[1]
 cascPath = sys.argv[2]
 
-# haar cascade creation
-haarCascade = cv2.CascadeClassifier(cascPath)
+# creating cascade from given file
+faceCascade = cv2.CascadeClassifier(cascPath)
 
 # read image and convert it to grayscale
 img = cv2.imread(imagePath)

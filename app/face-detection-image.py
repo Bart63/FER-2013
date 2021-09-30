@@ -13,7 +13,7 @@ img = cv2.imread(imagePath)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 # applying haar cascade to grayscale image
-faces = haarCascade.detectMultiScale(
+faces = faceCascade.detectMultiScale(
     gray, 
     scaleFactor=1.1,
     minNeighbors=5,
